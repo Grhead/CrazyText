@@ -38,8 +38,7 @@ namespace CrazyText
             {
                 sp[i] = char.ToUpper(sp[i]);
             }
-            string crazy;
-            crazy = new string(sp);
+            string crazy = new string(sp);
             lbl.Content = crazy;
 
         }
