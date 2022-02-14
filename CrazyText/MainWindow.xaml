@@ -17,15 +17,18 @@
             MaxLength="20"
             HorizontalContentAlignment="Center">
         </TextBox>
-        <Label
+        <TextBox
             Name="lbl"
             Height="80"
             Margin="100 50 100 0"
             FontSize="50"
             Background="AliceBlue"
             FontFamily="Times New Roman"
-            HorizontalContentAlignment="Center">
-        </Label>
+            HorizontalContentAlignment="Center"
+            IsReadOnly="True"
+            IsReadOnlyCaretVisible="True"
+            BorderThickness="0,0,0,0">
+        </TextBox>
         <Grid>
             <RadioButton
                 Name="First"

@@ -41,7 +41,7 @@ namespace CrazyText
                     sp[i] = char.ToUpper(sp[i]);
                 }
                 string crazy = new string(sp);
-                lbl.Content = crazy;
+                lbl.Text = crazy;
             }
             else
             {
@@ -51,7 +51,7 @@ namespace CrazyText
                     sp[i] = char.ToUpper(sp[i]);
                 }
                 string crazy = new string(sp);
-                lbl.Content = crazy;
+                lbl.Text = crazy;
             }
             
 
