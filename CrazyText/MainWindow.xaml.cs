@@ -24,7 +24,7 @@ namespace CrazyText
         {
             InitializeComponent();
         }
-
+        bool choise = false;
         private void Btn_OnClick(object sender, RoutedEventArgs e)
         {
             string UserEnter = UserBox.Text;
@@ -34,13 +34,36 @@ namespace CrazyText
                 sp[i] = Convert.ToChar(UserEnter[i]);
             }
 
-            for (int i = 1; i < sp.Length; i = i+2)
+            if (choise == false)
             {
-                sp[i] = char.ToUpper(sp[i]);
+                for (int i = 0; i < sp.Length; i = i + 2)
+                {
+                    sp[i] = char.ToUpper(sp[i]);
+                }
+                string crazy = new string(sp);
+                lbl.Content = crazy;
             }
-            string crazy = new string(sp);
-            lbl.Content = crazy;
+            else
+            {
+                sp[0] = char.ToLower(sp[0]);
+                for (int i = 1; i < sp.Length; i = i + 2)
+                {
+                    sp[i] = char.ToUpper(sp[i]);
+                }
+                string crazy = new string(sp);
+                lbl.Content = crazy;
+            }
+            
 
+        }
+        private void First_OnChecked(object sender, RoutedEventArgs e)
+        {
+            choise = false;
+        }
+
+        private void Second_OnChecked(object sender, RoutedEventArgs e)
+        {
+            choise = true;
         }
     }
 }

@@ -26,16 +26,38 @@
             FontFamily="Times New Roman"
             HorizontalContentAlignment="Center">
         </Label>
+        <Grid>
+            <RadioButton
+                Name="First"
+                Content="С первого"
+                FontFamily="Times New Roman"
+                FontSize="20"
+                HorizontalAlignment="Center"
+                Margin="30 10 150 0"
+                Checked="First_OnChecked">
+            </RadioButton>
+            <RadioButton
+                Name="Second"
+                Content="Со второго"
+                FontFamily="Times New Roman"
+                FontSize="20"
+                HorizontalAlignment="Center"
+                Margin="260 10 150 0"
+                Checked="Second_OnChecked">
+            </RadioButton>
+        </Grid>
         <Button
             Name="Btn"
             Height="80"
-            Margin="180 50 180 0"
+            Margin="180 20 180 0"
             FontSize="50"
             Content="Convert!"
             Foreground="Chocolate"
             Background="AliceBlue"
             FontFamily="Arial Bold"
             IsDefault = "true"
-            Click="Btn_OnClick"></Button>
+            Click="Btn_OnClick">
+        </Button>
+        
     </StackPanel>
 </Window>
