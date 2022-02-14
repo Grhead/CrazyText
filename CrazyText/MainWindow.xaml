@@ -35,6 +35,7 @@
             Foreground="Chocolate"
             Background="AliceBlue"
             FontFamily="Arial Bold"
+            IsDefault = "true"
             Click="Btn_OnClick"></Button>
     </StackPanel>
 </Window>
